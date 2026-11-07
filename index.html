@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Restaurant</h1>
+        <p>Fresh food, great taste!</p>
+    </header>
+
+    <main>
+        <section id="home-page">
+            <h2>Welcome to Our Restaurant</h2>
+
+            <div class="tiles">
+                <button class="tile" onclick="showMenu()">
+                    <span>🍽️</span>
+                    <h3>Menu</h3>
+                    <p>Explore our menu</p>
+                </button>
+
+                <button class="tile special" onclick="showSpecials()">
+                    <span>⭐</span>
+                    <h3>Specials</h3>
+                    <p>Discover today's surprise</p>
+                </button>
+
+                <button class="tile" onclick="showMap()">
+                    <span>📍</span>
+                    <h3>Map</h3>
+                    <p>Find our location</p>
+                </button>
+            </div>
+        </section>
+
+        <section id="content-page" hidden>
+            <button class="back-button" onclick="goHome()">
+                ← Back to Home
+            </button>
+
+            <h2 id="page-title"></h2>
+            <p id="page-description"></p>
+
+            <div id="menu-items" class="menu-items"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 My Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
